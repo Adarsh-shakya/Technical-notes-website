@@ -1,0 +1,7 @@
+/* Styles for the main content */
+.main-content {
+    margin-left: 250px;  /* To make room for the sidebar */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  

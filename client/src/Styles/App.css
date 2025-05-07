@@ -1,0 +1,19 @@
+/* Overall container for the layout */
+.app-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
