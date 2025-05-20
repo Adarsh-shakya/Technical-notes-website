@@ -1,0 +1,32 @@
+   html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1; /* This will push the footer down */
+}
+
+.right-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 0 20px;
+  border-right: 1px solid gainsboro;
+}
+
+
+ @media (max-width: 768px) {
+  .right-content{
+    padding: 0;
+    border: none;
+  }
+ }

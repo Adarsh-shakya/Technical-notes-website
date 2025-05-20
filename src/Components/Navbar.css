@@ -1,0 +1,120 @@
+/* Navbar Styles */
+.navbar {
+  background-color: white; 
+  padding: 0rem 2rem;
+  border-radius: 30px;
+  box-shadow: 3px 4px 6px -1px rgba(0, 0, 0, 0.4); 
+  position: sticky; 
+  border: 1px solid rgb(224, 222, 222);
+  height: auto;
+  margin: 8px;
+   top: 0;
+   left: 0; 
+  z-index: 1100;
+}
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo h1 a {
+    color: #1E2A38;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-menu li  {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.navbar-menu li a:hover {
+  color: #f39c12;
+}
+
+.navbar-menu li.active {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+  .navbar-toggle{
+    display: none;
+  }
+  .navbar-menu a {
+    color: #1E2A38;
+    font-weight: 550;
+    text-decoration: none;
+  }
+  
+  /* Hide the navbar menu by default on mobile screens */
+  @media (max-width: 768px) {
+    .navbar{
+      padding: 0%;
+      border-radius: 0;
+      margin: 0;
+    }
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      
+    }
+  
+    /* Hide the menu by default */
+    .navbar-menu {
+      overflow-x: auto;
+      gap: 1.2rem;
+      width: 89%;
+      
+      background-color: black;
+      white-space: nowrap;           /* Ensure items stay in one line */
+      scrollbar-width: none;         /* Firefox */
+      -ms-overflow-style: none;
+    }
+
+    .navbar-logo{
+      margin: 10px;
+    }
+  
+    .navbar-menu li a{
+      color:#fff;
+      font-size: 0.8rem;
+    }
+    /* Show the menu when it's active */
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    /* Hamburger icon */
+    .navbar-toggle {
+      display: block;
+      border: none;
+      color: #fff;
+      font-size: 1.4rem;
+      background-color: black;
+      cursor: pointer;
+      position: absolute;
+      top: 108px;
+      left: 5px;
+      
+    }
+  
+    /* Hide the hamburger icon when the menu is not active */
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

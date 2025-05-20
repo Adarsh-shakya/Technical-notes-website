@@ -1,0 +1,13 @@
+/* Styles for the main content */
+.main-content {
+    padding: 0px 20px;
+    width: calc(100% - 220px);  
+  }
+
+   @media (max-width: 768px) {
+    .main-content{
+    width: 100%;
+    padding: 0px;
+    }
+   }
+  
